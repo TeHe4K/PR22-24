@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="../ClassConnection/ClassConnection.csproj" />
   <Project Path="../ClassModule/ClassModule.csproj" />
   <Project Path="PR22-24_Konevskii.csproj" />
 </Solution>
