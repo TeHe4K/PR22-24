@@ -14,6 +14,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ClassConnection;
 
 namespace PR22_24_Konevskii
 {
@@ -27,8 +28,8 @@ namespace PR22_24_Konevskii
         {
             InitializeComponent();
             connect = new Connection();
-            connect.LoadData(Connection.tables.users);
-            connect.LoadData(Connection.tables.calls);
+            connect.LoadData(Connection.tabels.users);
+            connect.LoadData(Connection.tabels.calls);
             main = new Pages.Main();
 
             OpenPageMain();
