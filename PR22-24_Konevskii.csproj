@@ -124,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Elements\" />
+    <Folder Include="Pages\PagesUser\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="logo.ico" />
