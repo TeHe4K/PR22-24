@@ -165,7 +165,7 @@ namespace PR22_24_Konevskii.Pages.PagesUser
                 {
                     MessageBox.Show("Успешное удаление звонка", "Успешное", MessageBoxButton.OK, MessageBoxImage.Information);
                     MainWindow.connect.LoadData(ClassConnection.Connection.tabels.calls);
-                    MainWindow.main.Anim_move(MainWindow.main.framme_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);......
+                    MainWindow.main.Anim_move(MainWindow.main.framme_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
                 }
                 else
                 {
