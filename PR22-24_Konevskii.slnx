@@ -1,5 +1,15 @@
 <Solution>
-  <Project Path="../ClassConnection/ClassConnection.csproj" />
-  <Project Path="../ClassModule/ClassModule.csproj" />
-  <Project Path="PR22-24_Konevskii.csproj" />
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="../ClassConnection/ClassConnection.csproj">
+    <Platform Solution="Release|x64" Project="x64" />
+  </Project>
+  <Project Path="../ClassModule/ClassModule.csproj">
+    <Platform Solution="Release|x64" Project="x64" />
+  </Project>
+  <Project Path="PR22-24_Konevskii.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
 </Solution>

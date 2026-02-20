@@ -50,11 +50,11 @@
                             <Image Source="/img/redac.png" Width="20" Height="20"/>
                         </Button>
 
-                        <Button Style="{StaticResource BthRedac}" x:Name="btn_cancel" Background="#FFE48F2B" Margin="0,0,26.2,24" VerticalAlignment="Bottom" Height="40" HorizontalAlignment="Right" Width="105" Click="Click_Cancel_User_Redact">
+                        <Button Style="{StaticResource BthRedac}" x:Name="btn_cancel" Background="#FFE48F2B" Margin="0,0,26.2,24" VerticalAlignment="Bottom" Height="40" HorizontalAlignment="Right" Width="105" Click="Click_Cancel_Call_Redact">
                             <Image Source="/img/back.png" Width="20" Height="20"/>
                         </Button>
 
-                        <Button Style="{StaticResource BthRedac}" x:Name="btn_remove" Background="#FFE42F2B" Margin="30,0,0,23.6" VerticalAlignment="Bottom" Height="40" HorizontalAlignment="Left" Width="105" Click="Click_Remove_User_Redact">
+                        <Button Style="{StaticResource BthRedac}" x:Name="btn_remove" Background="#FFE42F2B" Margin="30,0,0,23.6" VerticalAlignment="Bottom" Height="40" HorizontalAlignment="Left" Width="105" Click="Click_Remove_Call_Redact">
                             <Image Source="/img/del.png" Width="20" Height="20"/>
                         </Button>
                     </Grid>

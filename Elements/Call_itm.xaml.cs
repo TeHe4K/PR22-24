@@ -71,7 +71,7 @@ namespace PR22_24_Konevskii.Elements
 
         private void Click_redact(object sender, RoutedEventArgs e)
         {
-            MainWindow.main.Anim_move(MainWindow.main.framme_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
+            MainWindow.main.Anim_Move(MainWindow.main.scroll_main,MainWindow.main.frame_main, MainWindow.main.frame_main, new Pages.PagesUser.Call_win(call_loc));
         }
 
         private void Click_remove(object sender, RoutedEventArgs e)
@@ -80,13 +80,13 @@ namespace PR22_24_Konevskii.Elements
             {
                 MainWindow.connect.LoadData(ClassConnection.Connection.tabels.calls);
 
-                string vs = "DELETE FROM [calls] WHERE [Код] = " + call_itm.id.ToString() + "";
-                var pc = MainWindow.connect.QueryAccess(query);
+                string vs = "DELETE FROM [calls] WHERE [Код] = " + call_loc.id.ToString() + "";
+                var pc = MainWindow.connect.QueryAccess(vs);
                 if (pc != null)
                 {
                     MessageBox.Show("Успешное удаление звонка", "Успешное", MessageBoxButton.OK, MessageBoxImage.Information);
                     MainWindow.connect.LoadData(ClassConnection.Connection.tabels.calls);
-                    MainWindow.main.Anim_move(MainWindow.main.framme_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
+                    MainWindow.main.Anim_Move(MainWindow.main.frame_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
                 }
                 else
                 {

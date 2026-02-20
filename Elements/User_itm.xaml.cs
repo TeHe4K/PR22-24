@@ -43,7 +43,7 @@ namespace PR22_24_Konevskii.Elements
 
         public void Click_redact(object sender, RoutedEventArgs e)
         {
-            MainWindow.main.Anim_move(MainWindow.main.framme_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
+            MainWindow.main.Anim_Move(MainWindow.main.scroll_main, MainWindow.main.frame_main, MainWindow.main.frame_main, new Pages.PagesUser.User_win(user_loc));
         }
         private void Click_remove(object sender, RoutedEventArgs e)
         {
@@ -67,7 +67,7 @@ namespace PR22_24_Konevskii.Elements
                 {
                     MessageBox.Show("Успешное удаление клиента", "Успешное", MessageBoxButton.OK, MessageBoxImage.Information);
                     MainWindow.connect.LoadData(ClassConnection.Connection.tabels.users);
-                    MainWindow.main.Anim_move(MainWindow.main.framme_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
+                    MainWindow.main.Anim_Move(MainWindow.main.frame_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
                 }
                 else
                 {

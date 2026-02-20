@@ -118,7 +118,7 @@ namespace PR22_24_Konevskii.Pages.PagesUser
                         {
                             MainWindow.connect.LoadData(ClassConnection.Connection.tabels.calls);
                             MessageBox.Show("Успешное добавление звонка", "Успешное", MessageBoxButton.OK, MessageBoxImage.Information);
-                            MainWindow.main.Anim_move(MainWindow.main.framme_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
+                            MainWindow.main.Anim_Move(MainWindow.main.frame_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
                         }
                         else
                         {
@@ -137,7 +137,7 @@ namespace PR22_24_Konevskii.Pages.PagesUser
                         {
                             MainWindow.connect.LoadData(ClassConnection.Connection.tabels.calls);
                             MessageBox.Show("Успешное изменение звонка", "Успешное", MessageBoxButton.OK, MessageBoxImage.Information);
-                            MainWindow.main.Anim_move(MainWindow.main.framme_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
+                            MainWindow.main.Anim_Move(MainWindow.main.frame_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
                         }
                         else
                         {
@@ -151,7 +151,7 @@ namespace PR22_24_Konevskii.Pages.PagesUser
         }
         private void Click_Cancel_Call_Redact(object sender, RoutedEventArgs e)
         {
-            MainWindow.main.Anim_move(MainWindow.main.framme_main, MainWindow.main.scroll_main);
+            MainWindow.main.Anim_Move(MainWindow.main.frame_main, MainWindow.main.scroll_main);
         }
         private void Click_Remove_Call_Redact(object sender, RoutedEventArgs e)
         {
@@ -160,12 +160,12 @@ namespace PR22_24_Konevskii.Pages.PagesUser
                 MainWindow.connect.LoadData(ClassConnection.Connection.tabels.calls);
 
                 string vs = "DELETE FROM [calls] WHERE [Код] = " + call_itm.id.ToString() + "";
-                var pc = MainWindow.connect.QueryAccess(query);
+                var pc = MainWindow.connect.QueryAccess(vs);
                 if (pc != null)
                 {
                     MessageBox.Show("Успешное удаление звонка", "Успешное", MessageBoxButton.OK, MessageBoxImage.Information);
                     MainWindow.connect.LoadData(ClassConnection.Connection.tabels.calls);
-                    MainWindow.main.Anim_move(MainWindow.main.framme_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
+                    MainWindow.main.Anim_Move(MainWindow.main.frame_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
                 }
                 else
                 {
@@ -195,5 +195,6 @@ namespace PR22_24_Konevskii.Pages.PagesUser
             }
             else return false;
         }
+
     }
 }

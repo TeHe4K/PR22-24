@@ -61,7 +61,7 @@ namespace PR22_24_Konevskii.Pages.PagesUser
                 {
                     MainWindow.connect.LoadData(ClassConnection.Connection.tabels.users);
                     MessageBox.Show("Успешное добавление клиента", "Успешное", MessageBoxButton.OK, MessageBoxImage.Information);
-                    MainWindow.main.Anim_move(MainWindow.main.framme_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
+                    MainWindow.main.Anim_Move(MainWindow.main.frame_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
                 }
                 else
                 {
@@ -78,7 +78,7 @@ namespace PR22_24_Konevskii.Pages.PagesUser
                 {
                     MainWindow.connect.LoadData(ClassConnection.Connection.tabels.users);
                     MessageBox.Show("Успешное изменение клиента", "Успешное", MessageBoxButton.OK, MessageBoxImage.Information);
-                    MainWindow.main.Anim_move(MainWindow.main.framme_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
+                    MainWindow.main.Anim_Move(MainWindow.main.frame_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
                 }
                 else
                 {
@@ -89,7 +89,7 @@ namespace PR22_24_Konevskii.Pages.PagesUser
 
         public void Click_Cancel_User_Redact(object sender, RoutedEventArgs e)
         {
-            MainWindow.main.Anim_move(MainWindow.main.framme_main, MainWindow.main.scroll_main);
+            MainWindow.main.Anim_Move(MainWindow.main.frame_main, MainWindow.main.scroll_main);
         }
 
         public void Click_Remove_User_Redact(object sender, RoutedEventArgs e)
@@ -114,7 +114,7 @@ namespace PR22_24_Konevskii.Pages.PagesUser
                 {
                     MessageBox.Show("Успешное удаление клиента", "Успешное", MessageBoxButton.OK, MessageBoxImage.Information);
                     MainWindow.connect.LoadData(ClassConnection.Connection.tabels.users);
-                    MainWindow.main.Anim_move(MainWindow.main.framme_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
+                    MainWindow.main.Anim_Move(MainWindow.main.frame_main, MainWindow.main.scroll_main, null, null, Main.page_main.users);
                 }
                 else
                 {
